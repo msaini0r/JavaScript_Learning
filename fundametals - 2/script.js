@@ -3,13 +3,13 @@
 
 // LEACTURE-2
 
-/*
+
 let haslicense = false;
 const passTest = true;
 
 if(passTest) haslicense = true;
 if(haslicense) console.log("I can drive"); 
-*/
+
 
 // Apart from that strict mode will also introduce reserve words which are stored for later use. 
 // const interface = "john";
@@ -18,7 +18,7 @@ if(haslicense) console.log("I can drive");
 
 // leacture-3
 
-/*
+
 function logger () {
     console.log("My name is Mohit")
 }
@@ -41,8 +41,9 @@ console.log(fruitProcessor(5,0));
 
 // we can use multiple valuesto get different output this is basically known as power of function.
 console.log(fruitProcessor(4,2));
-*/
+
 
 //////////////////////////////////////////////////////////////////////////////////////
 
 // LEACTURE-4
+
