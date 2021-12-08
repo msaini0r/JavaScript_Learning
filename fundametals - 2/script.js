@@ -1,7 +1,8 @@
+// Lecture - 2 (Strict Mode)
 "use strict";
 //strict mode will allow you to write secure javascript code and helps to introduce bugs in the code
 
-// LEACTURE-2
+// LEACTURE-3 (Functions)
 
 
 let haslicense = false;
@@ -16,7 +17,7 @@ if (haslicense) console.log("I can drive");
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-// leacture-3
+// lecture-4 (FUNCTION DECLARATION)
 
 
 function logger() {
@@ -45,7 +46,7 @@ console.log(fruitProcessor(4, 2));
 
 //////////////////////////////////////////////////////////////////////////////////////
 
-// LEACTURE-4
+// LEACTURE-5 (ARROW FUNCTION)
 
 // Normal function
 
@@ -67,7 +68,7 @@ console.log(Retirement(2001, "Andy"));
 
 /////////////////////////////////////////////////////////////////////////////////////////////////
 
-// LECTURE-5 (Functions Calling Other Functions)
+// LECTURE-6 (Functions Calling Other Functions)
 
 // Here we have made a another function called cutpieces which get called by function fruit.
 const cutpieces = function (fruit) {
@@ -88,7 +89,7 @@ console.log(fruit(2, 4));
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-// LEATURE - 6 (REWIEWING FUNCTION)
+// LECTURE - 7 (REWIEWING FUNCTION)
 
 const calcAge = function (birthyear) {
     return 2037 - birthyear;
@@ -115,8 +116,8 @@ console.log(yearsRetirement(1950, "sara"));
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-// LEATURE -7 (IT WAS JUST A CODING CHALLENGE)
-// LEACTURE- 8 (ARRAYS)
+// LECTURE - 8 (IT WAS JUST A CODING CHALLENGE)
+// LECTURE- 9 (ARRAYS)
 
 
 /* Arrays are like big containers in which we can store the variables and we can later reference/use them */
@@ -161,7 +162,7 @@ console.log(Mohit);
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////
 
-// Methods
+// LECTURE- 10 (METHODS)
 
 /* Operations in Array is kNown as Methods. */
 
@@ -193,3 +194,108 @@ console.log(friend.indexOf("Bob")); // this name is not in the array that why it
 // Their is better version of indexOf which tell us that whether that element is in Array or not by telling true or false.
 console.log(friend.includes("Steven"));
 console.log(friend.includes("Bob"));
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// LECTURE- 11 (IT WAS JUST A CODING CHALLENGE)
+
+// LECTURE- 12 (Introduction To Objects)
+
+// Difference between Array and Objects.
+
+// 1) There is no way of giving elements a name in arays. We can only refereence them by their order number not by reference name.
+// 2) In Objects order of values doesnot matter when we want to retrieve them. But in order of values matters a lot.S
+// 2) In Objects we use key value pairs which helps o give name to each elements that wee use.
+// 3) In Objects we are using curly braces " {} ".
+
+// Below is Array Code
+
+const DiljitArray = ["Diljit",
+    "Array",
+    2021 - 1991,
+    "Singer",
+    ["Honey", "Kunal", "Anuj"]
+];
+
+//Below is Obejcts Code
+
+const Diljit = {
+    firstName: "Diljit",
+    lastName: "Array",
+    Age: 2021 - 1991,
+    Job: "Singer",
+    Friends: ["Honey", "Kunal", "Anuj"]
+};
+
+// The values in here are called properties. For Example - firstName, LastName ,Job.
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// Lecture - 13 (Dot vs Bracket Notation)
+
+const Karan = {
+    firstName: "Karan",
+    lastName: "Aujla",
+    Age: 2021 - 1999,
+    Job: "Warrior",
+    Friends: ["Honey", "Kunal", "Anuj"]
+};
+console.log(Karan);
+
+// First way of getting a property from a object is by Dot Notation and Second is Bracket Notation.
+console.log(Karan.lastName);
+console.log(Karan["lastName"]);
+
+// The main difference between two is that in Bracket Notation we can put any expression (not just Strings) and also we can compute it from some other operation.
+const nameKey = "Name";
+console.log(Karan["first" + nameKey]);
+console.log(Karan["last" + nameKey]);
+
+// Another Examples
+
+const interestedIn = prompt(` What do you  want to know about Karan? Choose betwwen firstName, lastName, Job, Age and Friends.`);
+console.log(Karan[interestedIn]); // bracket notation will only work.
+
+// now lets see how we can add new properties with dot and bracket notation.
+Karan.location = "Paris";
+Karan["Twitter"] = "@Karan";
+console.log(Karan);
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// Lecture - 14 (Object Methods)
+
+// functions are like values that means that can be added to objects. Below we will see how.
+
+const Henry = {
+    firstName: "Henry",
+    lastName: "Ford",
+    Age: 1999,
+    Job: "Warrior",
+
+    // calcAge: function (Age){ // here we are using function in the form of a property
+    //     return 2037 - Age;
+    // }
+
+    //another and easy way of doing is by introducing "this" Keyword.
+    calcAge: function (){
+        return 2037 - this.Age;
+    }
+ };
+
+// console.log(Henry["calcAge"](1991));
+console.log(Henry.calcAge());
+
+/////////////////////////////////////////////////////////////////////////////////////////
+
+// LECTURE - 15 (IT WAS JUST A CODING CHALLENGE)
+// LECTURE - 16 (Ileration_ The FOR LOOPS)
+
+/*  lOOPS ARE SOMETHING WHICH ALLOW YOU TO DO REPETITIVE TASKS */
+
+for (let rep =1; rep<=10; rep++){
+    console.log(`Lifting weights repition ${rep}`);
+}
+
