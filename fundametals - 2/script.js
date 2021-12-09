@@ -4,24 +4,21 @@
 
 // LEACTURE-3 (Functions)
 
-
 let haslicense = false;
 const passTest = true;
 
 if (passTest) haslicense = true;
 if (haslicense) console.log("I can drive");
 
-
-// Apart from that strict mode will also introduce reserve words which are stored for later use. 
+// Apart from that strict mode will also introduce reserve words which are stored for later use.
 // const interface = "john";
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 // lecture-4 (FUNCTION DECLARATION)
 
-
 function logger() {
-    console.log("My name is Mohit")
+  console.log("My name is Mohit");
 }
 
 // calling a function / running a funvtion /invoking a function.
@@ -30,11 +27,10 @@ logger();
 logger();
 logger();
 
-
 function fruitProcessor(apples, oranges) {
-    console.log(apples, oranges);
-    const juice = `Juice with ${apples} apples and ${oranges} oranges.`;
-    return juice;
+  console.log(apples, oranges);
+  const juice = `Juice with ${apples} apples and ${oranges} oranges.`;
+  return juice;
 }
 
 //here what happen is the value of the juice get retuned with 5,0 we basically have to store it in console.logto show it.
@@ -43,23 +39,22 @@ console.log(fruitProcessor(5, 0));
 // we can use multiple valuesto get different output this is basically known as power of function.
 console.log(fruitProcessor(4, 2));
 
-
 //////////////////////////////////////////////////////////////////////////////////////
 
 // LEACTURE-5 (ARROW FUNCTION)
 
 // Normal function
 
-const calage = birthyear => 2037 - birthyear;
+const calage = (birthyear) => 2037 - birthyear;
 const age = calage(1991);
 console.log(age);
 
 // Arrow function
 const Retirement = (birthyear, firstname) => {
-    const age = 2037 - birthyear;
-    const Retirement = 65 - age;
-    return `${firstname} retires in ${Retirement} years`;
-}
+  const age = 2037 - birthyear;
+  const Retirement = 65 - age;
+  return `${firstname} retires in ${Retirement} years`;
+};
 
 console.log(Retirement(1991, "John"));
 console.log(Retirement(2001, "Andy"));
@@ -72,53 +67,47 @@ console.log(Retirement(2001, "Andy"));
 
 // Here we have made a another function called cutpieces which get called by function fruit.
 const cutpieces = function (fruit) {
-    return fruit * 4;
-}
-
+  return fruit * 4;
+};
 
 const fruit = function (apples, oranges) {
-    const applepieces = cutpieces(apples);
-    const orangepieces = cutpieces(oranges);
+  const applepieces = cutpieces(apples);
+  const orangepieces = cutpieces(oranges);
 
-    const juice = `Juice made with ${apples} apple pieces & ${oranges} orange pieces.`;
-    return juice;
-}
+  const juice = `Juice made with ${apples} apple pieces & ${oranges} orange pieces.`;
+  return juice;
+};
 
 console.log(fruit(2, 4));
-
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 // LECTURE - 7 (REWIEWING FUNCTION)
 
 const calcAge = function (birthyear) {
-    return 2037 - birthyear;
-}
+  return 2037 - birthyear;
+};
 
 const yearsRetirement = function (birthyear, firstperson) {
-    const age = calcAge(birthyear);
-    const yearsRetirement = 65 - age;
+  const age = calcAge(birthyear);
+  const yearsRetirement = 65 - age;
 
-
-    if (yearsRetirement > 0) {
-        console.log(`${firstperson} has retired in ${birthyear} years.`)
-        return yearsRetirement;
-
-    } else {
-        console.log(`${firstperson} has already retired `)
-        return -1;
-    }
-}
+  if (yearsRetirement > 0) {
+    console.log(`${firstperson} has retired in ${birthyear} years.`);
+    return yearsRetirement;
+  } else {
+    console.log(`${firstperson} has already retired `);
+    return -1;
+  }
+};
 
 console.log(yearsRetirement(1991, "jonas"));
 console.log(yearsRetirement(1950, "sara"));
-
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 // LECTURE - 8 (IT WAS JUST A CODING CHALLENGE)
 // LECTURE- 9 (ARRAYS)
-
 
 /* Arrays are like big containers in which we can store the variables and we can later reference/use them */
 
@@ -159,7 +148,6 @@ console.log(years);
 const Mohit = ["Mohit", 2021 - 2002, true];
 console.log(Mohit);
 
-
 ///////////////////////////////////////////////////////////////////////////////////////////////////////
 
 // LECTURE- 10 (METHODS)
@@ -195,7 +183,6 @@ console.log(friend.indexOf("Bob")); // this name is not in the array that why it
 console.log(friend.includes("Steven"));
 console.log(friend.includes("Bob"));
 
-
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 // LECTURE- 11 (IT WAS JUST A CODING CHALLENGE)
@@ -211,21 +198,22 @@ console.log(friend.includes("Bob"));
 
 // Below is Array Code
 
-const DiljitArray = ["Diljit",
-    "Array",
-    2021 - 1991,
-    "Singer",
-    ["Honey", "Kunal", "Anuj"]
+const DiljitArray = [
+  "Diljit",
+  "Array",
+  2021 - 1991,
+  "Singer",
+  ["Honey", "Kunal", "Anuj"],
 ];
 
 //Below is Obejcts Code
 
 const Diljit = {
-    firstName: "Diljit",
-    lastName: "Array",
-    Age: 2021 - 1991,
-    Job: "Singer",
-    Friends: ["Honey", "Kunal", "Anuj"]
+  firstName: "Diljit",
+  lastName: "Array",
+  Age: 2021 - 1991,
+  Job: "Singer",
+  Friends: ["Honey", "Kunal", "Anuj"],
 };
 
 // The values in here are called properties. For Example - firstName, LastName ,Job.
@@ -235,11 +223,11 @@ const Diljit = {
 // Lecture - 13 (Dot vs Bracket Notation)
 
 const Karan = {
-    firstName: "Karan",
-    lastName: "Aujla",
-    Age: 2021 - 1999,
-    Job: "Warrior",
-    Friends: ["Honey", "Kunal", "Anuj"]
+  firstName: "Karan",
+  lastName: "Aujla",
+  Age: 2021 - 1999,
+  Job: "Warrior",
+  Friends: ["Honey", "Kunal", "Anuj"],
 };
 console.log(Karan);
 
@@ -254,14 +242,15 @@ console.log(Karan["last" + nameKey]);
 
 // Another Examples
 
-const interestedIn = prompt(` What do you  want to know about Karan? Choose betwwen firstName, lastName, Job, Age and Friends.`);
+const interestedIn = prompt(
+  ` What do you  want to know about Karan? Choose betwwen firstName, lastName, Job, Age and Friends.`
+);
 console.log(Karan[interestedIn]); // bracket notation will only work.
 
 // now lets see how we can add new properties with dot and bracket notation.
 Karan.location = "Paris";
 Karan["Twitter"] = "@Karan";
 console.log(Karan);
-
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -270,19 +259,19 @@ console.log(Karan);
 // functions are like values that means that can be added to objects. Below we will see how.
 
 const Henry = {
-    firstName: "Henry",
-    lastName: "Ford",
-    Age: 1999,
-    Job: "Warrior",
+  firstName: "Henry",
+  lastName: "Ford",
+  Age: 1999,
+  Job: "Warrior",
 
-    // calcAge: function (Age){ // here we are using function in the form of a property
-    //     return 2037 - Age;
-    // }
+  // calcAge: function (Age){ // here we are using function in the form of a property
+  //     return 2037 - Age;
+  // }
 
-    //another and easy way of doing is by introducing "this" Keyword.
-    calcAge: function () {
-        return 2037 - this.Age;
-    }
+  //another and easy way of doing is by introducing "this" Keyword.
+  calcAge: function () {
+    return 2037 - this.Age;
+  },
 };
 
 // console.log(Henry["calcAge"](1991));
@@ -296,29 +285,22 @@ console.log(Henry.calcAge());
 /*  lOOPS ARE SOMETHING WHICH ALLOW YOU TO DO REPETITIVE TASKS */
 
 for (let rep = 1; rep <= 10; rep++) {
-    console.log(`Lifting weights repition ${rep}`);
+  console.log(`Lifting weights repition ${rep}`);
 }
 
 //////////////////////////////////////////////////////////////////////////////////////////////////
 
 //Lecture - 17 (Looping Arrays, Breaking and Continuing)
 
-const sidhu = [
-    "Sidhu",
-    "Singh",
-    43,
-    "Pilot",
-
-];
+const sidhu = ["Sidhu", "Singh", 43, "Pilot"];
 const types = [];
 
 for (let i = 0; i < sidhu.length; i++) {
+  //reading the array
+  console.log(sidhu[i], typeof sidhu[i]);
 
-    //reading the array
-    console.log(sidhu[i], typeof sidhu[i]);
-
-    //filling type array.
-    types.push(typeof sidhu[i]);
+  //filling type array.
+  types.push(typeof sidhu[i]);
 }
 console.log(types);
 
@@ -326,72 +308,63 @@ const yeah = [1998, 2005, 1986, 2021];
 const ages = [];
 
 for (let i = 0; i < yeah.length; i++) {
-    ages.push(2037 - yeah[i]);
+  ages.push(2037 - yeah[i]);
 }
 console.log(ages);
-
 
 // Break and Continue Statements
 
 //Continue is to exit the current iteration and move to the next one.
 // Break is used to terminate the whole loop.
 
-console.log(`----ONLY STRING-----`)
+console.log(`----ONLY STRING-----`);
 for (let i = 0; i < sidhu.length; i++) {
-    if (typeof sidhu[i] !== "string") continue;
-    console.log(sidhu[i], typeof sidhu[i]);
+  if (typeof sidhu[i] !== "string") continue;
+  console.log(sidhu[i], typeof sidhu[i]);
 }
 
-
-console.log(`----BREAK WITH NUMBER-----`)
+console.log(`----BREAK WITH NUMBER-----`);
 for (let i = 0; i < sidhu.length; i++) {
-    if (typeof sidhu[i] === "number") break;
-    console.log(sidhu[i], typeof sidhu[i]);
+  if (typeof sidhu[i] === "number") break;
+  console.log(sidhu[i], typeof sidhu[i]);
 }
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 // LECTURE - 18 (LOOPING BACKWARDS AND LOOPS IN LOOP)
 
-const Raymond = [
-    "Raymond",
-    "PSutton",
-    "74",
-    "Sri Lanka",
-];
+const Raymond = ["Raymond", "PSutton", "74", "Sri Lanka"];
 
 // 0,1,....,4
 // 4,3,.....0
 
-for (let i= Raymond.length -1; i>=0; i--){
-    console.log(i, Raymond[i]);
+for (let i = Raymond.length - 1; i >= 0; i--) {
+  console.log(i, Raymond[i]);
 }
 
 //LOOP IN LOOP
 
 // first loop created
-for (let exercise = 1; exercise < 4; exercise++){
-    console.log(`---Starting exercise ${exercise}`);
+for (let exercise = 1; exercise < 4; exercise++) {
+  console.log(`---Starting exercise ${exercise}`);
 }
 
 // second loop created in first loop
-for (let rep = 1;rep < 6; rep++){
-    console.log(` Lifting Weight ${rep}`);
+for (let rep = 1; rep < 6; rep++) {
+  console.log(` Lifting Weight ${rep}`);
 }
-
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 
 // LECTURE -19 (WHILE LOOPS)
 
-
 // Onlu use while loop when you dont know how many iterations you have to repeat.
 
-for (let rep = 1;rep <= 10; rep++){
-    console.log(` Lifting Weight ${rep}`);
+for (let rep = 1; rep <= 10; rep++) {
+  console.log(` Lifting Weight ${rep}`);
 }
 
-let rep =1;
-while(rep <=10){
-    console.log(` Lifting Weight ${rep}`);
-    rep++;
+let rep = 1;
+while (rep <= 10) {
+  console.log(` Lifting Weight ${rep}`);
+  rep++;
 }
