@@ -280,10 +280,10 @@ const Henry = {
     // }
 
     //another and easy way of doing is by introducing "this" Keyword.
-    calcAge: function (){
+    calcAge: function () {
         return 2037 - this.Age;
     }
- };
+};
 
 // console.log(Henry["calcAge"](1991));
 console.log(Henry.calcAge());
@@ -295,7 +295,103 @@ console.log(Henry.calcAge());
 
 /*  lOOPS ARE SOMETHING WHICH ALLOW YOU TO DO REPETITIVE TASKS */
 
-for (let rep =1; rep<=10; rep++){
+for (let rep = 1; rep <= 10; rep++) {
     console.log(`Lifting weights repition ${rep}`);
 }
 
+//////////////////////////////////////////////////////////////////////////////////////////////////
+
+//Lecture - 17 (Looping Arrays, Breaking and Continuing)
+
+const sidhu = [
+    "Sidhu",
+    "Singh",
+    43,
+    "Pilot",
+
+];
+const types = [];
+
+for (let i = 0; i < sidhu.length; i++) {
+
+    //reading the array
+    console.log(sidhu[i], typeof sidhu[i]);
+
+    //filling type array.
+    types.push(typeof sidhu[i]);
+}
+console.log(types);
+
+const yeah = [1998, 2005, 1986, 2021];
+const ages = [];
+
+for (let i = 0; i < yeah.length; i++) {
+    ages.push(2037 - yeah[i]);
+}
+console.log(ages);
+
+
+// Break and Continue Statements
+
+//Continue is to exit the current iteration and move to the next one.
+// Break is used to terminate the whole loop.
+
+console.log(`----ONLY STRING-----`)
+for (let i = 0; i < sidhu.length; i++) {
+    if (typeof sidhu[i] !== "string") continue;
+    console.log(sidhu[i], typeof sidhu[i]);
+}
+
+
+console.log(`----BREAK WITH NUMBER-----`)
+for (let i = 0; i < sidhu.length; i++) {
+    if (typeof sidhu[i] === "number") break;
+    console.log(sidhu[i], typeof sidhu[i]);
+}
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// LECTURE - 18 (LOOPING BACKWARDS AND LOOPS IN LOOP)
+
+const Raymond = [
+    "Raymond",
+    "PSutton",
+    "74",
+    "Sri Lanka",
+];
+
+// 0,1,....,4
+// 4,3,.....0
+
+for (let i= Raymond.length -1; i>=0; i--){
+    console.log(i, Raymond[i]);
+}
+
+//LOOP IN LOOP
+
+// first loop created
+for (let exercise = 1; exercise < 4; exercise++){
+    console.log(`---Starting exercise ${exercise}`);
+}
+
+// second loop created in first loop
+for (let rep = 1;rep < 6; rep++){
+    console.log(` Lifting Weight ${rep}`);
+}
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+// LECTURE -19 (WHILE LOOPS)
+
+
+// Onlu use while loop when you dont know how many iterations you have to repeat.
+
+for (let rep = 1;rep <= 10; rep++){
+    console.log(` Lifting Weight ${rep}`);
+}
+
+let rep =1;
+while(rep <=10){
+    console.log(` Lifting Weight ${rep}`);
+    rep++;
+}
