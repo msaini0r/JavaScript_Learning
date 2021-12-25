@@ -15,7 +15,7 @@ This is a repository to learn and practice JavaScript with help of useful resour
   </tr> -->
   <tr >
     <p align="center"; style="text-align: center; border:1px solid;padding:1em;">
-        <img width="100%" src="Assets/preview.mp4">
+        <img width="100%" src="Assets/preview.gif">
     </p>
   </tr>
 </table>
