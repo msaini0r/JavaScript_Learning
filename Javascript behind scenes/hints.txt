@@ -39,4 +39,19 @@ One of the most famous is V-8 JS engine of chrome and its the same engineused in
 
 2) After the execution of function and we wait for call-stack.
 
+3) Execution context consists of variable ennvironment, scope chain and this keyword.
+
 3) Cll stact is basically aplace where execution contexts gets stacked on top of each other. In order to keep track where we are in the program.
+
+<------------------------------- Scope and Scope Chain ------------------------------------>
+
+1) Scoping controls how our program are organized and accessed. where do variables live.
+
+2) Lexical scoping is controlled by placement of functions.
+
+3) Scope is basically a space or enviroment in which certain varible is declared. 
+There is global scope, functional scope and block scope. // search for the difference yourself
+
+4) Scope of a variable is the region of our code where a certain variables can be accessed.
+
+5) Scope chain has nothing to do with the order of function called.. It doesn't afect the scope chain at all.
