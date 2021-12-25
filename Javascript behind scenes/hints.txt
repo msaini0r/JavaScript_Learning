@@ -1,0 +1,34 @@
+<----------------------------------- What is JavaScript ------------------------------------------->
+ 
+1) Javascript is a high level language. It means in this langugae we dont have to worry about memory management.Because of something known as abstractions.
+*) Javascript and python are high level languages and "C" is a low level language.
+
+2) Javascript has something known as garbage collector which basically removes old, unused objects
+
+3) Javascript is just-in-time complied programming language. It meaan it use a mixture of complied and interpertation to execute the code.
+
+4) Javascript has first-class functions. It means functions can be treated as variables.
+We can pass functions into functions to get a function. And we can even return functions from function.
+
+5) Javascript follows oops concept.
+
+6) Javascript is a dynamic programming language. It means we don't have to define the datatype(like int,string) to the variable.
+The type of variable gets defined when it moves to javascript engine executes our code. Also the type of variable can b easily changed when we assign them.
+
+7) Javascript runs in a single thread. It means it can do one task at one time.
+In order to achieve multiple tasks we use event loops which basically execute it in background and puts back into main thread.
+
+<------------------------------- JavaScript Engine and Runtime ------------------------------------>
+
+1) JavaScript Engine(JS engine) is a program that executes javascript code. Every browser has its own javascript engine.
+One of the most famous is V-8 JS engine of chrome and its the same engineused in node.js .
+
+2) Every Javascript engines contain two container one is 'call-stack' and other is 'heap'. Our code is actually executed in call-stack using something called execution contexts.
+   Then the heap is an unstructed memory pool which stores all the objects that our application needs.
+
+3) when the code enters the JS engine.
+* the 1st step is parsing. It means reading the code and passing it into AST(Abstract Syntax Tree). It split varibles into meaningful varibles like const or function keyword. It also check any syntax error.
+* The 2nd step is taking the AST and then compiles into machine code. 
+* The 3rd step is execution which takes place in the 'call-stack'. the code is executed in just in time.
+
+4) In the modern javascript engines, The machine code is first complied in a un-optimized machine code and between execution the code is optimized. which makes modern js engines so fast. 
