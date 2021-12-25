@@ -31,4 +31,12 @@ One of the most famous is V-8 JS engine of chrome and its the same engineused in
 * The 2nd step is taking the AST and then compiles into machine code. 
 * The 3rd step is execution which takes place in the 'call-stack'. the code is executed in just in time.
 
-4) In the modern javascript engines, The machine code is first complied in a un-optimized machine code and between execution the code is optimized. which makes modern js engines so fast. 
+4) In the modern javascript engines, The machine code is first complied in a un-optimized machine code and between execution the code is optimized. which makes modern js engines so fast.
+
+<------------------------------- Execution Contexts and the Call Stack ------------------------------------>
+
+1) Execution Context is he environment in which the JavaScriptcode is executed. There is only one global execution context. For each function a new execution context is created.(not global execution context)
+
+2) After the execution of function and we wait for call-stack.
+
+3) Cll stact is basically aplace where execution contexts gets stacked on top of each other. In order to keep track where we are in the program.
