@@ -122,3 +122,17 @@ console.log(letters);
 
 const newRestraunt = {founderIn: 1998,...restaurant,founder: "mohit"}
 console.log(newRestraunt);
+
+/* <---------------------------- Rest Pattern and parameters ( Lecture -6 ) ------------------->  */
+
+// The basic syntax of spread operator as rest pattern but 
+// the function of rest pattern is to unpack where as spread operator is used to pack the elements/array.
+// just make sure the spread operator is at last in rest pattern becuase it will collect all the other.
+
+const [g,h, ...others] = [1,2,3,4,5];
+console.log(g,h,others);
+
+// Objects
+const {sat, ...weekdays} = restaurant.openingHours;
+console.log(weekdays);
+
