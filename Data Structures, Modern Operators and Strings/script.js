@@ -88,6 +88,37 @@ console.log(a,b);
 // Nested Objects
 
 const{
-    fri: {open, close}, } = openingHours;
+    fri: {open, close} } = openingHours;
 console.log(open, close);
 
+/* <-----------------------------------------Leacture 5 (The Spread Operator) ------------------------------>*/
+
+//// In order to add a value we use something known as spread operator
+
+const arrValue = [7,8,9];
+const newbad = [1,2, arrValue[0],arrValue[1],arrValue[2]];
+console.log(newbad);
+
+const oldarr = [1,2,...arrValue]
+console.log(oldarr);
+
+// Two important us cases of spread operaters are creating a shallow copy of arrays and two merge two arrays together.
+
+// Copy Arrary
+const mainMenuCopy = [...restaurant.starterMenu];
+
+// Merge Array
+const menu = [...restaurant.starterMenu, ...restaurant.mainMenu]
+console.log(menu);
+
+/// Iterables:arrays,strings, map, sets. Not Objects
+const str = 'jonas';
+const letters = [...str, " ","S."];
+console.log(letters);
+
+// Acording to the latest ES8 the spread operator works with objects also even though they are not iterables.
+
+// Objects
+
+const newRestraunt = {founderIn: 1998,...restaurant,founder: "mohit"}
+console.log(newRestraunt);
